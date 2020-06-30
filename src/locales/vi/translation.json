@@ -1,5 +1,8 @@
 {
-    "Nguyen Viet Xuan": "Nguyễn Viết Xuân",
-    "Welcome to React": "Xin chào",
-    "Male": "Nam"
+    "name": "Nguyễn Viết Xuân",
+    "dob": "07/10/1997",
+    "gender": "Nam",
+    "introduce.1": "Áp dụng kiến thức về Full-stack Javascript vào dự án thực tế.",
+    "introduce.2": "Mong muốn được làm việc trong môi trường chuyên nghiệp.",
+    "introduce.3": "Học hỏi và cải thiện trải nghiệm chuyên môn của tôi và các kỹ năng khác, đặc biệt là về Javascript (Reactjs, Nodejs, Expressjs)."
 }

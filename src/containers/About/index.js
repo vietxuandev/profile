@@ -22,16 +22,15 @@ const About = ({ t }) => {
                 <h4>Full stack Javascript</h4>
               </div>
               <div className='full-name'>
-                <h1>{t('Nguyen Viet Xuan')}</h1>
+                <h1>{t('name')}</h1>
               </div>
               <div className='profile'>
                 <div className='birthday'>
-                  <i className='fa fa-birthday-cake' aria-hidden='true'></i> Oct
-                  07, 1997
+                  <i className='fa fa-birthday-cake' aria-hidden='true'></i> {t('dob')}
                 </div>
                 <div className='space'>-</div>
                 <div className='gender'>
-                  <i className='fa fa-mars' aria-hidden='true'></i> {t('Male')}
+                  <i className='fa fa-mars' aria-hidden='true'></i> {t('gender')}
                 </div>
               </div>
               <div className='introduce'>
