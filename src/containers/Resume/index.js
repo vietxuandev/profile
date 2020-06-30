@@ -7,7 +7,7 @@ const Resume = () => {
       <div className='page-title'>
         <h1>Resume</h1>
         <div className='page-subtitle'>
-          <h4>Fresher</h4>
+          <h4>Full-stack Javascript</h4>
         </div>
       </div>
       <div className='container'>
@@ -55,10 +55,16 @@ const Resume = () => {
               <p>- It help desk</p>
             </div>
             <div className='timeline-item clearfix'>
-              <h5 className='item-period '>OCT 2019- DEC 2019</h5>
+              <h5 className='item-period '>OCT 2019 - DEC 2019</h5>
               <span className='item-company'>Beesight Soft</span>
               <h4 className='item-title'>Fresher Reactjs</h4>
               <p>- Co-ordinated with ReactJS in doing projects</p>
+            </div>
+            <div className='timeline-item clearfix'>
+              <h5 className='item-period '>MAR 2020 - Now</h5>
+              <span className='item-company'>TMA Solution</span>
+              <h4 className='item-title'>Engineer</h4>
+              <p>- Co-ordinated with AngularJs in doing projects</p>
             </div>
           </div>
           <div className=' col-xs-12 col-sm-12'>
@@ -68,8 +74,7 @@ const Resume = () => {
             <div className='timeline-item clearfix'>
               <p>- Programming language: Javascript ,Python, C++, C#.</p>
               <p>
-                - Basic knowledge: Object Oriented Programming (OOP), Structured
-                Query Language (SQL), HTML, CSS, SCSS, Bootstrap, Linux, Git.
+                - Basic knowledge: Object Oriented Programming (OOP), Structured Query Language (SQL), NoSQL (MongoDB), HTML, CSS, SASS, Bootstrap, Linux, Git and Github, Socket IO, Material UI, Deploy web app.
               </p>
               <p>- Framework: ReactJS, Django, Flask.</p>
               <p>- Platform: Nodejs.</p>

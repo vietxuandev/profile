@@ -3,7 +3,9 @@ import './style.scss';
 import bangdiem from '../../files/bangdiem.pdf';
 import cv from '../../files/cv.pdf';
 import { Modal, ModalBody } from 'reactstrap';
-const About = () => {
+import { withNamespaces } from 'react-i18next';
+
+const About = ({ t }) => {
   const [viewPDF, setViewPDF] = useState(false);
   return (
     <div className='about-wrapper container'>
@@ -17,10 +19,10 @@ const About = () => {
           <div className='col-sm-12 col-md-7 content'>
             <div className='home-text hp-left'>
               <div className='major'>
-                <h4>Fresher ReactJS, Python Web</h4>
+                <h4>Full stack Javascript</h4>
               </div>
               <div className='full-name'>
-                <h1>Nguyen Viet Xuan</h1>
+                <h1>{t('Nguyen Viet Xuan')}</h1>
               </div>
               <div className='profile'>
                 <div className='birthday'>
@@ -29,18 +31,16 @@ const About = () => {
                 </div>
                 <div className='space'>-</div>
                 <div className='gender'>
-                  <i className='fa fa-mars' aria-hidden='true'></i> Male
+                  <i className='fa fa-mars' aria-hidden='true'></i> {t('Male')}
                 </div>
               </div>
               <div className='introduce'>
                 <p>
-                  To apply my knowledge in the field of Javascript and Python
-                  programming into pratical use.
+                  To apply my knowledge in the field of Full-stack Javascript into practical use.
                 </p>
                 <p>Looking forward to working in a professional environment.</p>
                 <p>
-                  To learn and to improve my professional experiences and other
-                  skills particularly of Javascript, backend Nodejs or Python.
+                  To learn and to improve my professional experiences and other skills particularly of Javascript (Reactjs, Nodejs, Expressjs).
                 </p>
               </div>
               <div className='home-buttons'>
@@ -76,7 +76,7 @@ const About = () => {
             <div className='ci-text'>
               <h4>Web Design</h4>
               <p>Freelancer Python Django 1 year of experience.</p>
-              <p>Fresher ReactJS 2 months of practical experience.</p>
+              <p>Freelancer ReactJS 6 months of practical experience.</p>
             </div>
           </div>
         </div>
@@ -105,4 +105,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default withNamespaces()(About);

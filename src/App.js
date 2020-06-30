@@ -9,13 +9,15 @@ import ScrollTop from './components/ScrollTop';
 import Contact from './containers/Contact';
 import Resume from './containers/Resume';
 import NotFound from './containers/NotFound';
+import { withNamespaces } from 'react-i18next';
 
 import './App.scss';
+import LanguageSelector from './components/LanguageSelector';
 
 function App() {
-  const [scrollY, setScrollY] = useState(0);
-  function logit() {
-    setScrollY(window.pageYOffset);
+  const [showScroll, setShowScroll] = useState(false);
+  const logit = () => {
+    window.pageYOffset >= 150 ? setShowScroll(true) : setShowScroll(false);
   }
   useEffect(() => {
     const watchScroll = () => {
@@ -29,7 +31,7 @@ function App() {
   return (
     <Router>
       <div className='App'>
-        {scrollY >= 50 && <ScrollTop />}
+        {showScroll && <ScrollTop />}
         <Navbar />
         <Switch>
           <Route exact path='/' component={About} />
@@ -39,9 +41,10 @@ function App() {
           <Route component={NotFound} />
         </Switch>
         <Footer />
+        <LanguageSelector />
       </div>
     </Router>
   );
 }
 
-export default App;
+export default withNamespaces()(App);

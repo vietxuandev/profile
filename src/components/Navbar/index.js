@@ -58,6 +58,8 @@ const Navbar = () => {
                 Contact
               </NavLink>
             </li>
+            <li>
+            </li>
           </ul>
         </div>
         <div
