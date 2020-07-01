@@ -1,6 +1,4 @@
 import React, { useState } from 'react';
-import bangdiem from '../../files/bangdiem.pdf';
-import cv from '../../files/cv.pdf';
 import { Modal, ModalBody } from 'reactstrap';
 import { withNamespaces } from 'react-i18next';
 import './style.scss';
@@ -40,7 +38,7 @@ const About = ({ t }) => {
               </div>
               <div className='home-buttons'>
                 <a
-                  href={cv}
+                  href='/files/cv.pdf'
                   className='btn btn-primary download-button'
                   download
                 >
@@ -101,7 +99,7 @@ const About = ({ t }) => {
           </div>
           <embed
             className='pdf-view'
-            src={bangdiem}
+            src='/files/bangdiem.pdf'
             width='100%'
             height='500px'
           />
