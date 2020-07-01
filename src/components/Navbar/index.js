@@ -22,8 +22,7 @@ const Navbar = ({ t }) => {
         <div
           className={ClassNames(
             'site-nav',
-            { 'mobile-menu-hide': !toggle },
-            { 'mobile-menu-show': toggle }
+            { 'mobile-menu-hide': !toggle }
           )}
         >
           <ul className='site-main-menu'>
