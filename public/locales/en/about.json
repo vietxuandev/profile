@@ -6,5 +6,11 @@
     "introduce.2": "Looking forward to working in a professional environment.",
     "introduce.3": "To learn and to improve my professional experiences and other skills particularly of Javascript (Reactjs, Nodejs, Expressjs).",
     "download": "Download CV",
-    "view": "View Transcript"
+    "view": "View Transcript",
+    "do": "What I Do",
+    "do.web": "Web Design",
+    "do.web.content.1": "Freelancer Full-stack Python Django 1 year of experience.",
+    "do.web.content.2": "Freelancer ReactJS 6 months of practical experience.",
+    "do.admin": "System Admin",
+    "do.admin.content": "System management for ThaiBinh Service."
 }

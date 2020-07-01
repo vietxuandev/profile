@@ -1,11 +1,12 @@
 import React from 'react';
+import { withNamespaces } from 'react-i18next';
 import './style.scss';
 
-const Resume = () => {
+const Resume = ({ t }) => {
   return (
     <div className='resume-wrapper'>
       <div className='page-title'>
-        <h1>Resume</h1>
+        <h1>{t('title')}</h1>
         <div className='page-subtitle'>
           <h4>Full-stack Javascript</h4>
         </div>
@@ -14,73 +15,60 @@ const Resume = () => {
         <div className='row'>
           <div className=' col-xs-12 col-sm-6 '>
             <div className='block-title'>
-              <h2>Education</h2>
+              <h2>{t('education')}</h2>
             </div>
             <div className='timeline-item clearfix'>
-              <h5 className='item-period '>2015-2020</h5>
-              <span className='item-company'>
-                University of Information Technology (UIT)
-              </span>
-              <h4 className='item-title'>Information Security</h4>
-              <p>
-                Learn about malware analysis, system testing, Vulnerability
-                Analysis, Firewalls, IDS/IPS system, etc.
-              </p>
+              <h5 className='item-period '>{t('education.period')}</h5>
+              <span className='item-company'>{t('education.school')}</span>
+              <h4 className='item-title'>{t('education.major')}</h4>
+              <p>{t('education.detail')}</p>
             </div>
           </div>
           <div className=' col-xs-12 col-sm-6 '>
             <div className='block-title'>
-              <h2>Experience</h2>
+              <h2>{t('experience')}</h2>
             </div>
             <div className='timeline-item clearfix'>
-              <h5 className='item-period '>JULY 2018 - SEP 2018</h5>
-              <span className='item-company'>
-                Certified Network Security Center (CNSC)
-              </span>
-              <h4 className='item-title'>Interns</h4>
-              <p>- Experienced in doing research with lectures</p>
-              <p>- Experienced in using Django and Flask to write API</p>
+              <h5 className='item-period '>{t('experience.1.period')}</h5>
+              <span className='item-company'>{t('experience.1.company')}</span>
+              <h4 className='item-title'>{t('experience.1.position')}</h4>
+              <p>- {t('experience.1.detail.1')}</p>
+              <p>- {t('experience.1.detail.2')}</p>
             </div>
             <div className='timeline-item clearfix'>
-              <h5 className='item-period '>JULY 2018 - Now</h5>
-              <span className='item-company'>
-                Thai Binh Engineering and Trading
-              </span>
-              <h4 className='item-title'>IT Part-time</h4>
-              <p>
-                - Web application development with Django
-                <a href='https://smartthuanviet.cf/'> smartthuanviet.cf</a>
-              </p>
-              <p>- Website management</p>
-              <p>- It help desk</p>
+              <h5 className='item-period '>{t('experience.2.period')}</h5>
+              <span className='item-company'>{t('experience.2.company')}</span>
+              <h4 className='item-title'>{t('experience.2.position')}</h4>
+              <p>- {t('experience.2.detail.1')} <a href='https://smartthuanviet.cf/'> smartthuanviet.cf</a></p>
+              <p>- {t('experience.2.detail.2')} <a href='https://homeskeys.net/'> homeskeys.net</a></p>
+              <p>- {t('experience.2.detail.3')}</p>
+              <p>- {t('experience.2.detail.4')}</p>
             </div>
             <div className='timeline-item clearfix'>
-              <h5 className='item-period '>OCT 2019 - DEC 2019</h5>
-              <span className='item-company'>Beesight Soft</span>
-              <h4 className='item-title'>Fresher Reactjs</h4>
-              <p>- Co-ordinated with ReactJS in doing projects</p>
+              <h5 className='item-period '>{t('experience.3.period')}</h5>
+              <span className='item-company'>{t('experience.3.company')}</span>
+              <h4 className='item-title'>{t('experience.3.position')}</h4>
+              <p>- {t('experience.3.detail.1')}</p>
             </div>
             <div className='timeline-item clearfix'>
-              <h5 className='item-period '>MAR 2020 - Now</h5>
-              <span className='item-company'>TMA Solution</span>
-              <h4 className='item-title'>Engineer</h4>
-              <p>- Co-ordinated with AngularJs in doing projects</p>
+              <h5 className='item-period '>{t('experience.4.period')}</h5>
+              <span className='item-company'>{t('experience.4.company')}</span>
+              <h4 className='item-title'>{t('experience.4.position')}</h4>
+              <p>- {t('experience.4.detail.1')}</p>
             </div>
           </div>
           <div className=' col-xs-12 col-sm-12'>
             <div className='block-title'>
-              <h2>Skills</h2>
+              <h2>{t('skills')}</h2>
             </div>
             <div className='timeline-item clearfix'>
-              <p>- Programming language: Javascript ,Python, C++, C#.</p>
-              <p>
-                - Basic knowledge: Object Oriented Programming (OOP), Structured Query Language (SQL), NoSQL (MongoDB), HTML, CSS, SASS, Bootstrap, Linux, Git and Github, Socket IO, Material UI, Deploy web app.
-              </p>
-              <p>- Framework: ReactJS, Django, Flask.</p>
-              <p>- Platform: Nodejs.</p>
-              <p>- Knowledgedgeable in information security.</p>
-              <p>- Skilled in teamwork.</p>
-              <p>- Dynamic in adopting new technology into working.</p>
+              <p>- {t('skills.1')}</p>
+              <p>- {t('skills.2')}</p>
+              <p>- {t('skills.3')}</p>
+              <p>- {t('skills.4')}</p>
+              <p>- {t('skills.5')}</p>
+              <p>- {t('skills.6')}</p>
+              <p>- {t('skills.7')}</p>
             </div>
           </div>
         </div>
@@ -89,4 +77,4 @@ const Resume = () => {
   );
 };
 
-export default Resume;
+export default withNamespaces('resume')(Resume);

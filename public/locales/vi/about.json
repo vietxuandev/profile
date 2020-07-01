@@ -6,5 +6,11 @@
     "introduce.2": "Mong muốn được làm việc trong môi trường chuyên nghiệp.",
     "introduce.3": "Học hỏi và cải thiện trải nghiệm chuyên môn của tôi và các kỹ năng khác, đặc biệt là về Javascript (Reactjs, Nodejs, Expressjs).",
     "download": "Tải CV",
-    "view": "Xem bảng điểm"
+    "view": "Xem bảng điểm",
+    "do": "Những gì tôi làm",
+    "do.web": "Thiết kế Website",
+    "do.web.content.1": "Kinh nghiệm 1 năm Freelancer Full-stack Python Django.",
+    "do.web.content.2": "Kinh nghiệm 6 tháng Freelancer với ReactJS.",
+    "do.admin": "Quản trị hệ thống",
+    "do.admin.content": "Quán trị hệ thống cho ThaiBinh service."
 }

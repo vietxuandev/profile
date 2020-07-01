@@ -2,9 +2,10 @@ import React, { useState } from 'react';
 import ClassNames from 'classnames';
 import MenuButton from '../MenuButton';
 import { NavLink } from 'react-router-dom';
+import { withNamespaces } from 'react-i18next';
 import './style.scss';
 
-const Navbar = () => {
+const Navbar = ({ t }) => {
   const [toggle, setToggle] = useState(false);
   return (
     <div className='navbar-wrapper'>
@@ -33,7 +34,7 @@ const Navbar = () => {
                   setToggle(false);
                 }}
               >
-                About Me
+                {t('about')}
               </NavLink>
             </li>
             <li>
@@ -44,7 +45,7 @@ const Navbar = () => {
                   setToggle(false);
                 }}
               >
-                Resume
+                {t('resume')}
               </NavLink>
             </li>
             <li>
@@ -55,7 +56,7 @@ const Navbar = () => {
                   setToggle(false);
                 }}
               >
-                Contact
+                {t('contact')}
               </NavLink>
             </li>
             <li>
@@ -75,4 +76,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default withNamespaces('nav')(Navbar);

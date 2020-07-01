@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import './style.scss';
 import bangdiem from '../../files/bangdiem.pdf';
 import cv from '../../files/cv.pdf';
 import { Modal, ModalBody } from 'reactstrap';
 import { withNamespaces } from 'react-i18next';
+import './style.scss';
 
 const About = ({ t }) => {
   const [viewPDF, setViewPDF] = useState(false);
@@ -19,7 +19,7 @@ const About = ({ t }) => {
           <div className='col-sm-12 col-md-7 content'>
             <div className='home-text hp-left'>
               <div className='major'>
-                <h4>Full stack Javascript</h4>
+                <h4>Full-stack Javascript</h4>
               </div>
               <div className='full-name'>
                 <h1>{t('name')}</h1>
@@ -60,18 +60,29 @@ const About = ({ t }) => {
         </div>
       </div>
       <div className='block-title'>
-        <h2>What I Do</h2>
+        <h2>{t('do')}</h2>
       </div>
       <div className='row'>
-        <div className=' col-xs-12 col-sm-12 '>
+        <div className=' col-xs-12 col-sm-6 '>
           <div className='info-block-w-icon'>
             <div className='ci-icon'>
               <i className='fa fa-desktop' aria-hidden='true'></i>
             </div>
             <div className='ci-text'>
-              <h4>Web Design</h4>
-              <p>Freelancer Python Django 1 year of experience.</p>
-              <p>Freelancer ReactJS 6 months of practical experience.</p>
+              <h4>{t('do.web')}</h4>
+              <p>{t('do.web.content.1')}</p>
+              <p>{t('do.web.content.2')}</p>
+            </div>
+          </div>
+        </div>
+        <div className=' col-xs-12 col-sm-6 '>
+          <div className='info-block-w-icon'>
+            <div className='ci-icon'>
+              <i className="fa fa-server" aria-hidden="true"></i>
+            </div>
+            <div className='ci-text'>
+              <h4>{t('do.admin')}</h4>
+              <p>{t('do.admin.content')}</p>
             </div>
           </div>
         </div>
@@ -100,4 +111,4 @@ const About = ({ t }) => {
   );
 };
 
-export default withNamespaces()(About);
+export default withNamespaces('about')(About);

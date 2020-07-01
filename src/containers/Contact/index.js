@@ -1,19 +1,21 @@
 import React from 'react';
+import { withNamespaces } from 'react-i18next';
 import './style.scss';
-const Contact = () => {
+
+const Contact = ({ t }) => {
   return (
     <div className='contact-wrapper'>
       <div className='page-title'>
-        <h1>Contact</h1>
+        <h1>{t('contact')}</h1>
         <div className='page-subtitle'>
-          <h4>Get in Touch</h4>
+          <h4>{t('contact.detail')}</h4>
         </div>
       </div>
       <div className='container'>
         <div id='gmap' className='contact-map'>
           <iframe
             title='address'
-            src='https://maps.google.com/maps?q=Ký túc xá khu B tòa C1&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=&amp;output=embed'
+            src='https://maps.google.com/maps?q=Linh Chiểu Thủ Đức&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=&amp;output=embed'
             frameBorder='0'
             style={{ apsborder: '0' }}
             allowFullScreen=''
@@ -26,10 +28,9 @@ const Contact = () => {
                 <i className='fa fa-mobile' aria-hidden='true'></i>
               </div>
               <div className='ci-text'>
-                <h4>Phone Numbers</h4>
+                <h4>{t('phone')}</h4>
                 <p>
-                  <a href='tel:0869 123 020'>0869 123 020</a> -{' '}
-                  <a href='tel:0797 07 10 97'>0797 07 10 97</a>
+                  <a href='tel:0869 123 020'>0869 123 020</a>
                 </p>
               </div>
             </div>
@@ -55,11 +56,8 @@ const Contact = () => {
                 <i className='fa fa-map-marker' aria-hidden='true'></i>
               </div>
               <div className='ci-text'>
-                <h4>Address</h4>
-                <p>
-                  Dorm B, Vietnam national university Ho Chi Minh city, Di An,
-                  Binh Duong.
-                </p>
+                <h4>{t('address')}</h4>
+                <p>{t('address.detail')}</p>
               </div>
             </div>
           </div>
@@ -110,7 +108,7 @@ const Contact = () => {
                 <h4>Website</h4>
                 <p>
                   <a
-                    href='http://vietxuandev.com'
+                    href='https://vietxuandev.com'
                     target='_blank'
                     rel='noopener noreferrer'
                   >
@@ -126,4 +124,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default withNamespaces('contact')(Contact);
