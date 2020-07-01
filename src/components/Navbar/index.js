@@ -19,7 +19,6 @@ const Navbar = ({ t }) => {
             </div>
           </NavLink>
         </div>
-        <div className={ClassNames('background-nav', { 'd-none': !toggle })} onClick={() => { setToggle(false); }} />
         <div
           className={ClassNames(
             'site-nav',
