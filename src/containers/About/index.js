@@ -1,12 +1,17 @@
 import React, { useState } from 'react';
 import { Modal, ModalBody } from 'reactstrap';
 import { withNamespaces } from 'react-i18next';
+import { Helmet } from 'react-helmet';
 import './style.scss';
 
 const About = ({ t }) => {
   const [viewPDF, setViewPDF] = useState(false);
   return (
     <div className='about-wrapper container'>
+      <Helmet>
+        <title>{t('title')}</title>
+        <meta name='description' content={t('description')} />
+      </Helmet>
       <div className='home-content'>
         <div className='row flex-v-align'>
           <div className='col-sm-12 col-md-5'>
@@ -24,11 +29,13 @@ const About = ({ t }) => {
               </div>
               <div className='profile'>
                 <div className='birthday'>
-                  <i className='fa fa-birthday-cake' aria-hidden='true'></i> {t('dob')}
+                  <i className='fa fa-birthday-cake' aria-hidden='true'></i>{' '}
+                  {t('dob')}
                 </div>
                 <div className='space'>-</div>
                 <div className='gender'>
-                  <i className='fa fa-mars' aria-hidden='true'></i> {t('gender')}
+                  <i className='fa fa-mars' aria-hidden='true'></i>{' '}
+                  {t('gender')}
                 </div>
               </div>
               <div className='introduce'>
@@ -76,7 +83,7 @@ const About = ({ t }) => {
         <div className=' col-xs-12 col-sm-6 '>
           <div className='info-block-w-icon'>
             <div className='ci-icon'>
-              <i className="fa fa-server" aria-hidden="true"></i>
+              <i className='fa fa-server' aria-hidden='true'></i>
             </div>
             <div className='ci-text'>
               <h4>{t('do.admin')}</h4>

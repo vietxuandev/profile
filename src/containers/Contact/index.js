@@ -1,10 +1,15 @@
 import React from 'react';
 import { withNamespaces } from 'react-i18next';
+import { Helmet } from 'react-helmet';
 import './style.scss';
 
 const Contact = ({ t }) => {
   return (
     <div className='contact-wrapper'>
+      <Helmet>
+        <title>{t('title')}</title>
+        <meta name='description' content={t('description')} />
+      </Helmet>
       <div className='page-title'>
         <h1>{t('contact')}</h1>
         <div className='page-subtitle'>

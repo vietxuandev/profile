@@ -1,10 +1,15 @@
 import React from 'react';
 import { withNamespaces } from 'react-i18next';
+import { Helmet } from 'react-helmet';
 import './style.scss';
 
 const Resume = ({ t }) => {
   return (
     <div className='resume-wrapper'>
+      <Helmet>
+        <title>{t('title')}</title>
+        <meta name='description' content={t('description')} />
+      </Helmet>
       <div className='page-title'>
         <h1>{t('title')}</h1>
         <div className='page-subtitle'>
@@ -39,8 +44,14 @@ const Resume = ({ t }) => {
               <h5 className='item-period '>{t('experience.2.period')}</h5>
               <span className='item-company'>{t('experience.2.company')}</span>
               <h4 className='item-title'>{t('experience.2.position')}</h4>
-              <p>- {t('experience.2.detail.1')} <a href='https://smartthuanviet.cf/'> smartthuanviet.cf</a></p>
-              <p>- {t('experience.2.detail.2')} <a href='https://homeskeys.net/'> homeskeys.net</a></p>
+              <p>
+                - {t('experience.2.detail.1')}{' '}
+                <a href='https://smartthuanviet.cf/'> smartthuanviet.cf</a>
+              </p>
+              <p>
+                - {t('experience.2.detail.2')}{' '}
+                <a href='https://homeskeys.net/'> homeskeys.net</a>
+              </p>
               <p>- {t('experience.2.detail.3')}</p>
               <p>- {t('experience.2.detail.4')}</p>
             </div>
