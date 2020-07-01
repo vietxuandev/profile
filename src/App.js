@@ -12,7 +12,6 @@ import NotFound from './containers/NotFound';
 import { withNamespaces } from 'react-i18next';
 
 import './App.scss';
-import LanguageSelector from './components/LanguageSelector';
 
 function App() {
   const [showScroll, setShowScroll] = useState(false);
@@ -41,7 +40,6 @@ function App() {
           <Route component={NotFound} />
         </Switch>
         <Footer />
-        <LanguageSelector />
       </div>
     </Router>
   );
