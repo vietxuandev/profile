@@ -115,25 +115,27 @@
       -webkit-box-shadow: 0 0 70px 0 rgba(0, 0, 0, 0.08);
       -moz-box-shadow: 0 0 70px 0 rgba(0, 0, 0, 0.08);
       box-shadow: 0 0 70px 0 rgba(0, 0, 0, 0.08);
-      -webkit-transition: all 0.44s ease-in-out;
-      -moz-transition: all 0.44s ease-in-out;
-      -o-transition: all 0.44s ease-in-out;
-      -ms-transition: all 0.44s ease-in-out;
-      transition: all 0.44s ease-in-out;
+      -webkit-transition: 0.44s;
+      -moz-transition: 0.44s;
+      -o-transition: 0.44s;
+      -ms-transition: 0.44s;
+      transition: 0.44s;
     }
 
     .mobile-menu-hide {
       width: 0;
+      opacity: 0;
+      margin-right: -100%;
       overflow: hidden;
       visibility: hidden;
       -webkit-box-shadow: none;
       -moz-box-shadow: none;
       box-shadow: none;
-      -webkit-transition: all 0.44s ease-in-out;
-      -moz-transition: all 0.44s ease-in-out;
-      -o-transition: all 0.44s ease-in-out;
-      -ms-transition: all 0.44s ease-in-out;
-      transition: all 0.44s ease-in-out;
+      -webkit-transition: 0.44s;
+      -moz-transition: 0.44s;
+      -o-transition: 0.44s;
+      -ms-transition: 0.44s;
+      transition: 0.44s;
     }
 
     .site-nav {
