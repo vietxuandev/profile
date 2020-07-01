@@ -22,7 +22,7 @@ const LanguageSelector = ({ t }) => {
 
     return (
         <div className="language-selecter-wrapper" onClick={() => toggleLanguage()}>
-            <img src={`/images/${language}.png`} alt='flag' /> {t('language')}
+            <img src={`/images/${language}.png`} alt='flag' /> <span>{t('language')}</span>
         </div>
     )
 }

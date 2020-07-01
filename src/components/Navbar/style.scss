@@ -50,7 +50,7 @@
         margin-right: 40px;
         a {
           padding: 5px 0;
-          font-family: 'Poppins', Helvetica, sans-serif;
+          font-family: "Poppins", Helvetica, sans-serif;
           font-size: 14px;
           font-weight: 400;
           font-style: normal;
@@ -63,9 +63,6 @@
           &.active {
             opacity: 1;
           }
-        }
-        &:last-child {
-          margin-right: 0;
         }
       }
     }
