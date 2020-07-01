@@ -98,19 +98,16 @@
     .mobile-visible {
       visibility: visible;
     }
+
     .site-nav {
       position: fixed;
-      height: 100%;
-      width: 100%;
       background-color: #fff;
-      top: 0;
+      top: 52px;
       bottom: 0;
       right: 0;
+      left: auto;
       width: 100%;
       max-width: 320px;
-      height: calc(100% - 52px);
-      left: auto;
-      top: 52px;
       z-index: -1;
       opacity: 1;
       overflow: auto;
@@ -118,15 +115,15 @@
       -webkit-box-shadow: 0 0 70px 0 rgba(0, 0, 0, 0.08);
       -moz-box-shadow: 0 0 70px 0 rgba(0, 0, 0, 0.08);
       box-shadow: 0 0 70px 0 rgba(0, 0, 0, 0.08);
-      -webkit-transition: all 0s ease-in-out;
-      -moz-transition: all 0s ease-in-out;
-      -o-transition: all 0s ease-in-out;
-      -ms-transition: all 0s ease-in-out;
-      transition: all 0s ease-in-out;
+      -webkit-transition: all 0.44s ease-in-out;
+      -moz-transition: all 0.44s ease-in-out;
+      -o-transition: all 0.44s ease-in-out;
+      -ms-transition: all 0.44s ease-in-out;
+      transition: all 0.44s ease-in-out;
     }
+
     .mobile-menu-hide {
       width: 0;
-      right: 0;
       margin-right: -100%;
       overflow: hidden;
       opacity: 0;
@@ -134,15 +131,6 @@
       -webkit-box-shadow: none;
       -moz-box-shadow: none;
       box-shadow: none;
-    }
-    .mobile-menu-show {
-      -webkit-transition: all 0.44s ease-in-out;
-      -moz-transition: all 0.44s ease-in-out;
-      -o-transition: all 0.44s ease-in-out;
-      -ms-transition: all 0.44s ease-in-out;
-      transition: all 0.44s ease-in-out;
-    }
-    .mobile-menu-hide {
       -webkit-transition: all 0.44s ease-in-out;
       -moz-transition: all 0.44s ease-in-out;
       -o-transition: all 0.44s ease-in-out;
@@ -158,11 +146,13 @@
         }
       }
     }
+
     .header-content {
       z-index: 999;
       background-color: #fff;
       padding: 10px 20px;
     }
+
     .logo-symbol {
       width: 32px;
       height: 32px;
@@ -170,6 +160,7 @@
       font-size: 18px;
       margin-top: 0;
     }
+
     .logo-text {
       display: inline-block;
       line-height: 32px;
