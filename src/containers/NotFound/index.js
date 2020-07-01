@@ -1,13 +1,14 @@
 import React from 'react';
+import { withNamespaces } from 'react-i18next';
 import './style.scss';
 
-const NotFound = () => {
+const NotFound = ({ t }) => {
   return (
     <div className='not-found-wrapper'>
-      <h1 class='nf-page-title'>404</h1>
-      <p>It looks like nothing was found at this location.</p>
+      <h1 className='nf-page-title'>404</h1>
+      <p>{t('content')}</p>
     </div>
   );
 };
 
-export default NotFound;
+export default withNamespaces('notfound')(NotFound);
