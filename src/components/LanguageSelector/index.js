@@ -9,11 +9,11 @@ function LanguageSelector({ t }) {
 
     return (
         <div>
-            <button onClick={() => changeLanguage('vi')}>VI</button>
+            <button onClick={() => changeLanguage('vn')}>VI</button>
             <button onClick={() => changeLanguage('en')}>EN</button>
-            <h1>{t('Welcome to React')}</h1>
+            <h1>{t('language')}</h1>
         </div>
     )
 }
 
-export default withNamespaces()(LanguageSelector);
+export default withNamespaces('nav')(LanguageSelector);
