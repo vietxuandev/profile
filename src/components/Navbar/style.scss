@@ -5,6 +5,16 @@
   display: table;
   box-sizing: border-box;
   padding: 40px 40px 0 40px;
+  .background-nav {
+    position: fixed;
+    top: 52px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: black;
+    opacity: 0.2;
+    z-index: -2;
+  }
   .text-logo {
     &:hover {
       .logo-symbol {
@@ -67,7 +77,6 @@
       }
     }
   }
-
   .mobile-visible {
     display: none;
     visibility: hidden;
