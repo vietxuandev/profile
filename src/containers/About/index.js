@@ -34,13 +34,9 @@ const About = ({ t }) => {
                 </div>
               </div>
               <div className='introduce'>
-                <p>
-                  To apply my knowledge in the field of Full-stack Javascript into practical use.
-                </p>
-                <p>Looking forward to working in a professional environment.</p>
-                <p>
-                  To learn and to improve my professional experiences and other skills particularly of Javascript (Reactjs, Nodejs, Expressjs).
-                </p>
+                <p>{t('introduce.1')}</p>
+                <p>{t('introduce.2')}</p>
+                <p>{t('introduce.3')}</p>
               </div>
               <div className='home-buttons'>
                 <a
@@ -48,7 +44,7 @@ const About = ({ t }) => {
                   className='btn btn-primary download-button'
                   download
                 >
-                  Download CV
+                  {t('download')}
                 </a>
                 <button
                   className='btn btn-secondary contact-button'
@@ -56,7 +52,7 @@ const About = ({ t }) => {
                     setViewPDF(true);
                   }}
                 >
-                  View Transcript
+                  {t('view')}
                 </button>
               </div>
             </div>
