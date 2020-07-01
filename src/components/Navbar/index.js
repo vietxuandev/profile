@@ -3,8 +3,8 @@ import ClassNames from 'classnames';
 import MenuButton from '../MenuButton';
 import { NavLink } from 'react-router-dom';
 import { withNamespaces } from 'react-i18next';
-import './style.scss';
 import LanguageSelector from '../LanguageSelector';
+import './style.scss';
 
 const Navbar = ({ t }) => {
   const [toggle, setToggle] = useState(false);
